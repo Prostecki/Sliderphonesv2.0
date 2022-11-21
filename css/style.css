@@ -1,0 +1,732 @@
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, div, a {
+    font-family: 'Noto Sans Mende Kikakui', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(52, 52, 52);
+    z-index: 99;
+}
+
+.nav > a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.preferences-bg {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphone {
+    background-image: url('../img/iphone.webp');
+}
+
+.google {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('../img/google_v2.0.png');
+}
+
+.oneplus {
+    display: flex;
+    background-image: url('../img/oneplus.jpeg');
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pixel {
+    background-image: url('../img/pixel_v1.0.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.xiaomi {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../img/xiaomi.jpeg');
+}
+
+.meizu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('../img/meizu.jpeg');
+}
+
+.huawei {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('../img/huawei.jpeg');
+}
+
+.oppo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url('../img/oppo.jpeg');
+}
+
+.rog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/asusrog.jpeg');
+}
+
+.preferences_slides {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.android {
+    background-image: url('../img/android.jpeg');
+    margin-bottom: 400px;
+    width: 120px;
+    height: 120px;
+    transition: all 0.6s;
+
+}
+
+.cpu {
+    background-image: url('../img/cpu.png');
+    margin-top: 400px;
+    width: 120px;
+    height: 120px;
+    transition: all 0.6s;
+}
+
+.pixel_logo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-image: url('../img/pixel_logo1.png');
+    margin-left: 372px;
+    margin-bottom: 55px;
+    transition: all 0.6s;
+}
+
+.price {
+    width: 120px;
+    height: 120px;
+    background-image: url('../img/pricebanner.jpeg');
+    transition: all 0.6s;
+}
+
+.learn-more {
+    width: 200px;
+    color: black;
+    background-color: rgb(208,236,250);
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 400px;
+    cursor: pointer;
+    transition: all 0.7s;
+    z-index: 1;
+}
+
+.care {
+    background-image: url('https://www.transparentpng.com/thumb/google-logo/google-fit-logo-images-free-download-hearted-JqvNhh.png');
+    width: 120px;
+    height: 120px;
+    margin-left: 700px;
+    margin-top: 50px;
+    transition: all 0.6s;
+}
+
+.pix-phone {
+    background-image: url('https://fscl01.fonpit.de/devices/00/2000-w320h320.png');
+    width: 120px;
+    height: 120px;
+    margin-left: 700px;
+    margin-top: 50px;
+    transition: all 0.6s;
+}
+
+.cloud {
+    background-image: url('https://pngimg.com/uploads/google/google_PNG19627.png');
+    width: 350px;
+    height: 100px;
+    margin-left: 700px;
+    margin-top: 50px;
+    transition: all 0.6s;
+}
+
+.screen {
+    background-image: url('../img/screen999.png');
+    width: 120px;
+    height: 120px;
+    margin-left: 700px;
+    margin-top: 50px;
+    transition: all 0.6s;
+}
+
+
+
+.bg-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.pixel_logo:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.pixel_logo:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.android:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.android:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.cpu:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.cpu:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.price:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.price:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.care:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.care:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.pix-phone:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.pix-phone:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.cloud:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.cloud:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+.screen:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.screen:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.meizu_1 {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/meizu_1.png');
+    margin-right: 50px;
+    transition: all 0.6s;
+    margin-bottom: 100px;
+
+}
+
+.meizu_2 {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/meizu_2.png');
+    margin-right: 50px;
+    transition: all 0.6s;
+    margin-bottom: 100px;
+}
+
+.meizu_3 {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/meizu_3.webp');
+    margin-right: 50px;
+    transition: all 0.6s;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+.meizu_4 {
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/meizu_4.webp');
+    margin-right: 50px;
+    transition: all 0.6s;
+    margin-bottom: 100px;
+}
+
+.meizu_1:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.meizu_1:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.meizu_2:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.meizu_2:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.meizu_3:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.meizu_3:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.meizu_4:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.meizu_4:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.oppo_1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/oppo_1.jpeg');
+    transition: all 0.6s;
+
+}
+
+.oppo_2 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/oppo_2.webp');
+    transition: all 0.6s;
+
+}
+
+.oppo_3 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/oppo_3.jpeg');
+    transition: all 0.6s;
+    text-align: center;
+}
+
+.oppo_4 {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/oppo_4.jpeg');
+    transition: all 0.6s;
+
+}
+
+.margin-right {
+    margin-right: 100px;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+.oppo_1:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.oppo_1:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.oppo_2:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.oppo_2:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.oppo_3:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.oppo_3:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+.oppo_4:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    color: white;
+}
+
+.oppo_4:hover > div {
+    background-color: rgba(0, 0, 0, 0.672);
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+
+
+/* --- ---  --- ---  --- --- --- --- --- --- --- --- Последний слайд кнопка (анимация) --- ---  --- ---  --- ---  --- ---  --- --- */
+
+
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+	        animation: shadow-drop-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+}
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+  
+/* --- ---  --- ---  --- --- --- --- --- --- Первый слайд кнопка (анимация)  --- ---  --- ---  --- ---  --- ---  --- --- */
+
+.learn-more:hover {
+    transition: all 0.7s;
+    transform: scale(1.2);
+    background-color: rgb(50, 50, 50);
+    color: white;
+    box-shadow: 0px 0px 20px white;
+}
+
+/* --- ---  --- ---  --- --- --- --- --- --- Третий слайд кнопка (анимация)  --- ---  --- ---  --- ---  --- ---  --- --- */
+
+.learn-more2 {
+    background: #eee;
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    margin-left: 200px;
+  }
+  
+  .effect1 {
+    color: #222;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    padding: 10px 50px 10px 20px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -ms-transform: scale(3);
+    transform: scale(3);
+  }
+  
+  .effect1 .bg {
+    background: #222;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+  
+.effect1:hover {
+    padding-right: 20px;
+    color: #fff;
+  }
+  
+  .effect1:hover .bg {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  
+  .effect1 .bg:before, .effect1 .bg:after {
+    content: '';
+    height: 2px;
+    width: 10px;
+    background: #222;
+    position: absolute;
+    right: -2px;      
+    -webkit-transition: all 0.3s;      
+    -o-transition: all 0.3s;      
+    transition: all 0.3s;
+  }
+  
+  .effect1 .bg:before {
+    bottom: 3px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .effect1 .bg:after{
+    top: 3px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .effect1:hover .bg:before,
+  .effect1:hover .bg:after{
+    right: 0;
+  }
+  
+  .effect1:hover .bg:before{
+    bottom: 6px;
+  }
+  
+  .effect1:hover .bg:after{
+    top: 6px;
+  }
+
+/* --- ---  --- ---  --- --- --- --- --- --- Пятый слайд кнопка (анимация)  --- ---  --- ---  --- ---  --- ---  --- --- */
+
+
+  .learn-more3 {
+    padding: 5px 25px;
+    font-size: 20px;
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: linear-gradient(45deg, rgb(165,82,88) 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(26,7,11);
+    cursor: pointer;
+    transition: all 0.7s;
+    margin-left: 200px;
+}
+
+.learn-more3:hover {
+    background-position: 0;
+}
+
+/* --- ---  --- ---  --- --- --- --- --- --- Седьмой слайд кнопка (анимация)  --- ---  --- ---  --- ---  --- ---  --- --- */
+
+.learn-more4 {
+    width: 150px;
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(40,40,40);
+    cursor: pointer;
+    transition: all 0.7s;
+    margin-bottom: 150px;
+}
+
+.learn-more4:hover {
+    transition: all 0.8s;
+    transform: scale(1.2);
+    box-shadow: 2px 4px 5px black;
+}
+  
+/* --- ---  --- ---  --- --- --- --- --- --- Девятый слайд кнопка (анимация)  --- ---  --- ---  --- ---  --- ---  --- --- */
+
+.learn-more5 {
+    width: 150px;
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+    transition: all 0.8s;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
+    cursor: pointer;
+}
+
+.flip-vertical-right:hover {
+	-webkit-animation: flip-vertical-right 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+	        animation: flip-vertical-right 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite alternate-reverse both;
+}
+
+ @-webkit-keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  @keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  
